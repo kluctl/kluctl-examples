@@ -1,7 +1,7 @@
 clusters:
-  project:
-    url: https://github.com/AljoschaP/kluctl-external-clusters
-    subdir: clusters
+  - project:
+      url: git@github.com:kluctl/kluctl-examples-external-clusters.git
+      subdir: clusters
 
 deployment:
   project:
