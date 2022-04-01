@@ -10,7 +10,7 @@ deployment:
     ref: main
 
 targets:
-  - name: dev-external
+  - name:  simple-with-external-repos
     cluster: kind
     args:
-      environment: dev-external
+      environment: simple-with-external-repos
