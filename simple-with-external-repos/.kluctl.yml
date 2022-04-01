@@ -5,12 +5,12 @@ clusters:
 
 deployment:
   project:
-    url: https://github.com/AljoschaP/kluctl-external-deployments
-    subdir: simple
+    url: git@github.com:kluctl/kluctl-examples-external-deployments.git
     ref: main
+    subdir: simple
 
 targets:
-  - name:  simple-with-external-repos
+  - name: simple-with-external-repos
     cluster: kind
     args:
       environment: simple-with-external-repos
