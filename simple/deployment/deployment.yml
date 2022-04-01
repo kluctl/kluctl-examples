@@ -1,4 +1,4 @@
 kustomizeDirs:
   - path: nginx
 
-overrideNamespace: "{{ args.environment }}-nginx"
+overrideNamespace: "{{ args.environment }}"

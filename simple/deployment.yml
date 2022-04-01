@@ -3,11 +3,11 @@ includes:
 
 commonLabels:
   my.prefix/environment: "{{ args.environment }}"
-  my.prefix/deployment-project: k8s-deployment-nginx
+  my.prefix/deployment-project: k8s-deployment-simple
 
 deleteByLabels:
   my.prefix/environment: "{{ args.environment }}"
-  my.prefix/deployment-project: k8s-deployment-nginx
+  my.prefix/deployment-project: k8s-deployment-simple
 
 args:
   - name: environment
