@@ -1,0 +1,12 @@
+matrix:
+  - name: README
+    sources:
+      - README.md
+    aspell:
+      lang: en
+    dictionary:
+      wordlists:
+        - .wordlist.txt
+      output: build/dictionary/readme.dic
+    pipeline:
+      - pyspelling.filters.url:
