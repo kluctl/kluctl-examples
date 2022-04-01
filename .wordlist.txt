@@ -1,5 +1,10 @@
 Kubernetes
+arg
 github
 https
 kluctl
+namespace
+nginx
 png
+repos
+yml
