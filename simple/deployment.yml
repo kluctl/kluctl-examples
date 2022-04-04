@@ -2,8 +2,8 @@ deployments:
   - include: deployment
 
 commonLabels:
-  my.prefix/environment: "{{ args.environment }}"
-  my.prefix/deployment-project: k8s-deployment-simple
+  examples.kluctl.io/environment: "{{ args.environment }}"
+  examples.kluctl.io/deployment-project: k8s-deployment-simple
 
 args:
   - name: environment
