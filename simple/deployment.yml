@@ -1,11 +1,7 @@
-includes:
-  - path: deployment
+deployments:
+  - include: deployment
 
 commonLabels:
-  my.prefix/environment: "{{ args.environment }}"
-  my.prefix/deployment-project: k8s-deployment-simple
-
-deleteByLabels:
   my.prefix/environment: "{{ args.environment }}"
   my.prefix/deployment-project: k8s-deployment-simple
 
