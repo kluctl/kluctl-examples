@@ -1,4 +1,3 @@
-
 deployments:
   - path: redis
   - path: adservice
