@@ -1,0 +1,7 @@
+helmChart:
+  repo: https://charts.bitnami.com/bitnami
+  chartName: redis
+  chartVersion: 16.8.0
+  releaseName: cart
+  namespace: default
+  output: deploy.yml
