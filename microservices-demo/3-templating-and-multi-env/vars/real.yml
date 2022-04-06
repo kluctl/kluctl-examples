@@ -1,0 +1,4 @@
+redis:
+  architecture: replication
+  # the standalone architecture exposes redis via a different service then the replication architecture (which uses sentinel)
+  svcName: cart-redis

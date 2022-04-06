@@ -1,8 +1,9 @@
-architecture: replication
+architecture: {{ redis.architecture }}
 
 auth:
   enabled: false
 
+{% if redis.architecture == "replication" %}
 sentinel:
   enabled: true
   quorum: 2
@@ -11,6 +12,7 @@ replica:
   replicaCount: 3
   persistence:
     enabled: true
+{% endif %}
 
 master:
   persistence:

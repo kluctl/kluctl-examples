@@ -1,3 +1,6 @@
+vars:
+  - file: ./vars/{{ args.env_type }}.yml
+
 deployments:
   - path: namespaces
   - include: third-party
