@@ -1,3 +1,5 @@
+# yamllint disable-file
+
 deployments:
   - path: adservice
   - path: cartservice

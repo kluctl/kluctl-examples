@@ -1,3 +1,5 @@
+# yamllint disable-file
+
 architecture: {{ redis.architecture }}
 
 auth:
