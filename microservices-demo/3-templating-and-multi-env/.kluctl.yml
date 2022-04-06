@@ -1,3 +1,13 @@
 targets:
   - name: local
     cluster: kind
+    args:
+      env_type: local
+  - name: test
+    cluster: kind
+    args:
+      env_type: real
+  - name: prod
+    cluster: kind
+    args:
+      env_type: real
