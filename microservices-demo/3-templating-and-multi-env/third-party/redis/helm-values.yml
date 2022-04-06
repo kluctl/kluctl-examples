@@ -1,0 +1,17 @@
+architecture: replication
+
+auth:
+  enabled: false
+
+sentinel:
+  enabled: true
+  quorum: 2
+
+replica:
+  replicaCount: 3
+  persistence:
+    enabled: true
+
+master:
+  persistence:
+    enabled: true
