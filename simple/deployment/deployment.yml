@@ -1,4 +1,4 @@
-kustomizeDirs:
+deployments:
   - path: nginx
 
 overrideNamespace: "{{ args.environment }}"

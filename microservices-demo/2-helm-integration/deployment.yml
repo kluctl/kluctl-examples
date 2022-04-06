@@ -1,0 +1,6 @@
+deployments:
+  - include: third-party
+  - include: services
+
+commonLabels:
+  examples.kluctl.io/deployment-project: "microservices-demo"

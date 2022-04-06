@@ -1,0 +1,10 @@
+redis:
+  architecture: standalone
+  # the standalone architecture exposes redis via a different service then the replication architecture (which uses sentinel)
+  svcName: cart-redis-master
+
+services:
+  emailservice:
+    enabled: false
+  loadgenerator:
+    enabled: false

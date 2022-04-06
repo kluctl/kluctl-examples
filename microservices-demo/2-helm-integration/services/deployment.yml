@@ -1,0 +1,12 @@
+deployments:
+  - path: adservice
+  - path: cartservice
+  - path: checkoutservice
+  - path: currencyservice
+  - path: emailservice
+  - path: frontend
+  - path: loadgenerator
+  - path: paymentservice
+  - path: productcatalogservice
+  - path: recommendationservice
+  - path: shippingservice

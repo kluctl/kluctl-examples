@@ -1,0 +1,18 @@
+# yamllint disable-file
+
+deployments:
+  - path: adservice
+  - path: cartservice
+  - path: checkoutservice
+  - path: currencyservice
+  {% if services.emailservice.enabled %}
+  - path: emailservice
+  {% endif %}
+  - path: frontend
+  {% if services.loadgenerator.enabled %}
+  - path: loadgenerator
+  {% endif %}
+  - path: paymentservice
+  - path: productcatalogservice
+  - path: recommendationservice
+  - path: shippingservice

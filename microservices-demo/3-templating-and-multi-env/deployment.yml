@@ -1,0 +1,13 @@
+vars:
+  - file: ./vars/{{ args.env_type }}.yml
+
+deployments:
+  - path: namespaces
+  - include: third-party
+  - include: services
+
+commonLabels:
+  examples.kluctl.io/deployment-project: "microservices-demo"
+  examples.kluctl.io/deployment-target: "{{ target.name }}"
+
+overrideNamespace: ms-demo-{{ target.name }}
