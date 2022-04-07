@@ -16,3 +16,5 @@ namespace and deploy a nginx. You can configure the name of the namespace by cha
 2. [simple-with-external-repos](simple-with-external-repos): This example is very similar to `simple` except that the 
 target cluster and the deployment is defined externally. You can configure the repositories and the ref in  
 [.kluctl.yml](simple-with-external-repos/.kluctl.yml).
+3. [simple-helm](simple-helm/.kluctl.yml): This example is very similar to `simple` but it deploys a Helm-based nginx to
+give a first impression how kluctl and Helm work together.
