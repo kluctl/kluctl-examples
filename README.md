@@ -7,7 +7,8 @@ Kubernetes deployment, while making it fully manageable (deploy, diff, prune, de
 line interface.
 
 This repository contains example configurations that show how you can use kluctl to simplify deployments and make your
-platform teams happy.
+platform teams happy. For a complete description of the examples and a getting started guide take a look at 
+[kluctl.io](https://kluctl.io).
 
 # List of examples
 1. [simple](simple): This example is a very simple one that shows how to define a target cluster, context, create a
