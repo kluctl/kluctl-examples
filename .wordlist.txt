@@ -4,6 +4,7 @@ github
 https
 io
 kluctl
+microservices
 namespace
 nginx
 png

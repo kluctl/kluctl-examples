@@ -19,3 +19,6 @@ target cluster and the deployment is defined externally. You can configure the r
 [.kluctl.yml](simple-with-external-repos/.kluctl.yml).
 3. [simple-helm](simple-helm/.kluctl.yml): This example is very similar to `simple` but it deploys a Helm-based nginx to
 give a first impression how kluctl and Helm work together.
+4. [microservices-demo](microservices-demo): This example is a more complex one and contains the files for the 
+[microservices tutorial](https://kluctl.io/guides/tutorials/microservices-demo) inspired by the
+[Google Online Boutique Demo](https://github.com/GoogleCloudPlatform/microservices-demo).
