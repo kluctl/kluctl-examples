@@ -5,9 +5,5 @@ commonLabels:
   my.prefix/environment: "{{ args.environment }}"
   my.prefix/deployment-project: k8s-deployment-simple-helm
 
-deleteByLabels:
-  my.prefix/environment: "{{ args.environment }}"
-  my.prefix/deployment-project: k8s-deployment-simple-helm
-
 args:
   - name: environment
