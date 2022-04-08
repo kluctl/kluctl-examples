@@ -1,0 +1,10 @@
+clusters:
+  - project:
+      url: git@github.com:kluctl/kluctl-examples-external-clusters.git
+      subDir: clusters
+
+targets:
+  - name: simple-helm
+    cluster: kind
+    args:
+      environment: simple-helm

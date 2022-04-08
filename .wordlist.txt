@@ -2,6 +2,7 @@ Kubernetes
 arg
 github
 https
+io
 kluctl
 namespace
 nginx
