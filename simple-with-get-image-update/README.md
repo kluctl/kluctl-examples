@@ -23,7 +23,7 @@ spec:
 ```bash
 kluctl diff -t simple -u
 ```
-output:
+result:
 ```
 Changed objects:
   simple/Deployment/nginx-deployment
@@ -35,4 +35,15 @@ Diff for object simple/Deployment/nginx-deployment
 | spec.template.spec.containers[0].image | -nginx:1.14.2                                                                                                                     |
 |                                        | +nginx:1.21.6                                                                                                                     |
 +----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+```
+```bash
+kluctl list-images --simple -t simple
+```
+result:
+```yaml
+images:
+  - image: mendhak/http-https-echo
+    resultImage: mendhak/http-https-echo:23
+  - image: nginx
+    resultImage: nginx:1.21.6
 ```
