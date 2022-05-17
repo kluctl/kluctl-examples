@@ -10,3 +10,8 @@ matrix:
       output: build/dictionary/readme.dic
     pipeline:
       - pyspelling.filters.url:
+      - pyspelling.filters.html:
+          comments: true
+          ignores:
+          - code
+          - pre

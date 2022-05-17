@@ -1,0 +1,5 @@
+deployments:
+  - path: nginx
+  - path: echo-headers
+
+overrideNamespace: "{{ args.environment }}"
