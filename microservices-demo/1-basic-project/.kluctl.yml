@@ -1,3 +1,3 @@
 targets:
   - name: local
-    cluster: kind
+    context: kind-kind

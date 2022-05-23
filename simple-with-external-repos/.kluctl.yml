@@ -1,8 +1,3 @@
-clusters:
-  - project:
-      url: git@github.com:kluctl/kluctl-examples-external-clusters.git
-      subDir: clusters
-
 deployment:
   project:
     url: git@github.com:kluctl/kluctl-examples-external-deployments.git
@@ -11,6 +6,5 @@ deployment:
 
 targets:
   - name: simple-with-external-repos
-    cluster: kind
     args:
       environment: simple-with-external-repos
