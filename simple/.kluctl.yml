@@ -1,5 +1,4 @@
 targets:
   - name: simple
-    cluster: kind
     args:
       environment: simple
