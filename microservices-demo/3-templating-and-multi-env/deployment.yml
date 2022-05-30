@@ -3,6 +3,7 @@ vars:
 
 deployments:
   - path: namespaces
+  - barrier: true
   - include: third-party
   - include: services
 
