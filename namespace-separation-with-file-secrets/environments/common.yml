@@ -1,0 +1,4 @@
+namespaces:
+  persistency: kluctl-examples-{{ args.environment }}-persistency
+  services: kluctl-examples-{{ args.environment }}-services
+  misc: kluctl-examples-{{ args.environment }}-misc

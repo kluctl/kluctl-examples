@@ -1,0 +1,24 @@
+targets:
+  - name: dev
+    context: kind-kind
+    args:
+      environment: dev
+    sealingConfig:
+      secretSets:
+        - dev
+  - name: test
+    context: dev-dce-t1-hellmann-net
+    args:
+      environment: test
+    sealingConfig:
+      secretSets:
+        - test
+
+secretsConfig:
+  secretSets:
+    - name: dev
+      vars:
+        - file: .secrets-dev.yaml
+    - name: test
+      vars:
+        - file: .secrets-test.yaml

@@ -1,0 +1,7 @@
+deployments:
+  - path: mongodb
+
+commonLabels:
+  kluctl-example/environment: "{{ args.environment }}"
+
+overrideNamespace: {{ namespaces.persistency }}

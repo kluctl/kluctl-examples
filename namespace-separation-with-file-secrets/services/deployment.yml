@@ -1,0 +1,9 @@
+deployments:
+  - path: ui
+  - path: echo-headers
+  - path: nginx-helm
+
+commonLabels:
+  kluctl-example/environment: "{{ args.environment }}"
+
+overrideNamespace: {{ namespaces.services }}

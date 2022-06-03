@@ -1,0 +1,9 @@
+deployments:
+  {% if args.environment == 'dev' %}
+  - path: sealed-secrets-operator
+  {% endif %}
+
+commonLabels:
+  kluctl-example/environment: "{{ args.environment }}"
+
+overrideNamespace: {{ namespaces.misc }}

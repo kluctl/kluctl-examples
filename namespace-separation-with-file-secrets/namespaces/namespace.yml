@@ -1,0 +1,7 @@
+{% for ns in namespaces.values() %}
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ ns }}
+---
+{% endfor %}

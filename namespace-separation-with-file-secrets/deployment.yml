@@ -1,0 +1,18 @@
+deployments:
+  - path: namespaces
+  - barrier: true
+  - include: misc
+  - barrier: true
+  - include: persistency
+  - include: services
+
+commonLabels:
+  examples.kluctl.io/environment: "{{ args.environment }}"
+  examples.kluctl.io/deployment-project: namespace-separation-with-file-secrets
+
+vars:
+  - file: environments/common.yml
+  - file: environments/{{ args.environment }}.yml
+
+args:
+  - name: environment
