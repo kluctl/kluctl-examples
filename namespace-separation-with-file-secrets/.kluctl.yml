@@ -7,7 +7,7 @@ targets:
       secretSets:
         - dev
   - name: test
-    context: dev-dce-t1-hellmann-net
+    context: kind-kind
     args:
       environment: test
     sealingConfig:
