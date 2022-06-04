@@ -22,3 +22,5 @@ give a first impression how kluctl and Helm work together.
 4. [microservices-demo](microservices-demo): This example is a more complex one and contains the files for the 
 [microservices tutorial](https://kluctl.io/docs/guides/tutorials/microservices-demo/) inspired by the
 [Google Online Boutique Demo](https://github.com/GoogleCloudPlatform/microservices-demo).
+5. [namespace-separation-with-file-secrets](namespace-separation-with-file-secrets): This example shows a separation 
+to different dynamic namespaces and variables loaded for the corresponding environment.
