@@ -1,0 +1,16 @@
+targets:
+  - name: simple
+    context: kind-kind
+    args:
+      environment: simple
+    sealingConfig:
+      secretSets:
+        - simple
+
+secretsConfig:
+  secretSets:
+    - name: simple
+      vars:
+        - vault:
+            address: http://localhost:8200
+            path: secret/data/simple

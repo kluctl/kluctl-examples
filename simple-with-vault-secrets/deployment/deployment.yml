@@ -1,0 +1,4 @@
+deployments:
+  - path: mongodb
+
+overrideNamespace: "{{ args.environment }}"
