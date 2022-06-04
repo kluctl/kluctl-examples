@@ -1,0 +1,26 @@
+targets:
+  - name: dev
+    context: kind-kind
+    args:
+      environment: dev
+    sealingConfig:
+      secretSets:
+        - dev
+  - name: test
+    context: kind-kind
+    args:
+      environment: test
+    sealingConfig:
+      secretSets:
+        - test
+
+secretsConfig:
+  sealedSecrets:
+    namespace: kube-system
+  secretSets:
+    - name: dev
+      vars:
+        - file: .secrets-dev.yaml
+    - name: test
+      vars:
+        - file: .secrets-test.yaml

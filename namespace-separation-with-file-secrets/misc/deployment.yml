@@ -1,0 +1,4 @@
+deployments:
+  - path: sealed-secrets-operator
+
+overrideNamespace: kube-system
