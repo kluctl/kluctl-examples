@@ -1,5 +1,7 @@
 deployments:
+  {% if args.environment == 'dev' %}
   - path: ui
+  {% endif %}
   - path: echo-headers
   - path: nginx-helm
 
