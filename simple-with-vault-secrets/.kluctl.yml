@@ -8,6 +8,9 @@ targets:
         - simple
 
 secretsConfig:
+  sealedSecrets:
+    namespace: simple
+    controllerName: sealed-secrets-controller
   secretSets:
     - name: simple
       vars:
