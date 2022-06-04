@@ -24,12 +24,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: db-secrets
-                  key: username
+                  key: DB_USERNAME
                   optional: false
             - name: MONGO_INITDB_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: db-secrets
-                  key: password
+                  key: DB_PASSWORD
                   optional: false
 
