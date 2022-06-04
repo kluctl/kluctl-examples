@@ -1,4 +1,6 @@
 deployments:
+  - path: sealed-secrets-operator
+  - barrier: true
   - path: mongodb
 
 overrideNamespace: "{{ args.environment }}"

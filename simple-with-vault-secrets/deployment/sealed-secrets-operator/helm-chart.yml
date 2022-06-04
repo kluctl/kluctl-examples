@@ -1,0 +1,6 @@
+helmChart:
+  repo: https://bitnami-labs.github.io/sealed-secrets
+  chartName: sealed-secrets
+  chartVersion: 2.1.6
+  releaseName: sealed-secrets-controller
+  output: deploy.yml
