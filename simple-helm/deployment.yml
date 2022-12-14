@@ -1,5 +1,5 @@
 deployments:
-  - path: deployment
+  - include: deployment
 
 commonLabels:
   examples.kluctl.io/environment: "{{ args.environment }}"
