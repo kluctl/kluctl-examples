@@ -19,3 +19,5 @@ give a first impression how kluctl and Helm work together.
 3. [microservices-demo](microservices-demo): This example is a more complex one and contains the files for the
 [microservices tutorial](https://kluctl.io/docs/guides/tutorials/microservices-demo/) inspired by the
 [Google Online Boutique Demo](https://github.com/GoogleCloudPlatform/microservices-demo).
+4. [preview-envs](preview-envs): Not a Kluctl deployment, but a set of configuration files used by the
+[GitProjector](https://github.com/kluctl/template-controller/blob/main/docs/spec/v1alpha1/gitprojector.md) examples.
