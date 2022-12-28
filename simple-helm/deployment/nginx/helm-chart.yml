@@ -1,6 +1,6 @@
 helmChart:
   repo: https://charts.bitnami.com/bitnami
   chartName: nginx
-  chartVersion: 9.9.9
+  chartVersion: 13.2.0
   releaseName: nginx
   output: deploy.yml
