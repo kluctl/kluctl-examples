@@ -1,0 +1,4 @@
+deployments:
+  - include: base
+  - barrier: true
+  - include: apps

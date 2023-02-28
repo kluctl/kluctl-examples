@@ -1,0 +1,13 @@
+controller:
+  hostNetwork: true
+  service:
+    type: ClusterIP
+  nodeSelector:
+    ingress-ready: "true"
+  tolerations:
+    - key: "node-role.kubernetes.io/control-plane"
+      effect: "NoSchedule"
+  updateStrategy:
+    rollingUpdate:
+      maxUnavailable: 1
+    type: RollingUpdate

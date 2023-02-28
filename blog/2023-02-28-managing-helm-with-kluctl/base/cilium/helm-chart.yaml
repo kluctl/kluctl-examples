@@ -1,0 +1,7 @@
+helmChart:
+  repo: https://helm.cilium.io/
+  chartName: cilium
+  chartVersion: 1.13.0
+  skipPrePull: true
+  releaseName: cilium
+  namespace: "kube-system"

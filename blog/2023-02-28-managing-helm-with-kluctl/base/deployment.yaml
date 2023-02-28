@@ -1,0 +1,7 @@
+deployments:
+  - path: cilium
+  - path: namespaces
+  - barrier: true
+  - path: cert-manager
+  - path: ingress-nginx
+    waitReadiness: true

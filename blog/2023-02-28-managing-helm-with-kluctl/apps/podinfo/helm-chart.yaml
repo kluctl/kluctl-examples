@@ -1,0 +1,6 @@
+helmChart:
+  repo: oci://ghcr.io/stefanprodan/charts/podinfo
+  chartVersion: 6.3.4
+  releaseName: podinfo
+  namespace: "podinfo"
+  skipPrePull: true

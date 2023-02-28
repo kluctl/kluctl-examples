@@ -1,0 +1,27 @@
+# three node (two workers) cluster config
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+    # this is required for ingress-nginx to work
+    kubeadmConfigPatches:
+      - |
+        kind: InitConfiguration
+        nodeRegistration:
+          kubeletExtraArgs:
+            node-labels: "ingress-ready=true"
+    extraPortMappings:
+      - containerPort: 80
+        hostPort: 8080
+        listenAddress: 127.0.0.1
+        protocol: TCP
+      - containerPort: 443
+        hostPort: 4443
+        listenAddress: 127.0.0.1
+        protocol: TCP
+  - role: worker
+  - role: worker
+networking:
+  # we use Cilium, so let's disable the default CNI
+  disableDefaultCNI: true
+  kubeProxyMode: none

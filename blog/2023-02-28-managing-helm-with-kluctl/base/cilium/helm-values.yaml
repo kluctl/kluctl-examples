@@ -1,0 +1,26 @@
+nodeinit:
+  enabled: true
+kubeProxyReplacement: strict
+hostServices:
+  enabled: false
+externalIPs:
+  enabled: true
+nodePort:
+  enabled: true
+hostPort:
+  enabled: true
+bpf:
+  masquerade: false
+image:
+  pullPolicy: IfNotPresent
+ipam:
+  mode: kubernetes
+
+hubble:
+  tls:
+    auto:
+      method: cronJob
+
+# See https://medium.com/@charled.breteche/kind-cluster-with-cilium-and-no-kube-proxy-c6f4d84b5a9d for details
+k8sServiceHost: kluctl-tutorial-control-plane
+k8sServicePort: 6443

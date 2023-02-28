@@ -1,0 +1,7 @@
+helmChart:
+  repo: https://charts.jetstack.io
+  chartName: cert-manager
+  chartVersion: v1.11.0
+  releaseName: cert-manager
+  namespace: "kube-system"
+  skipPrePull: true
