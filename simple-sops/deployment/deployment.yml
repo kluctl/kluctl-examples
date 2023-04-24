@@ -1,0 +1,4 @@
+deployments:
+  - path: nginx
+
+overrideNamespace: "{{ args.environment }}"
