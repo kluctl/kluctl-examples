@@ -1,3 +1,4 @@
+discriminator: kluctl-examples-simple-helm-{{ target.name }}
 
 targets:
   - name: simple-helm

@@ -1,3 +1,5 @@
+discriminator: kluctl-examples-microservices-demo-{{ target.name }}
+
 targets:
   - name: local
     context: kind-kind
