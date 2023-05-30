@@ -1,4 +1,0 @@
-targets:
-  - name: simple
-    args:
-      environment: simple
