@@ -4,3 +4,6 @@ targets:
   - name: simple-helm
     args:
       environment: simple-helm
+
+args:
+  - name: environment

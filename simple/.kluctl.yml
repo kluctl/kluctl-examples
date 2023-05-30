@@ -4,3 +4,6 @@ targets:
   - name: simple
     args:
       environment: simple
+
+args:
+  - name: environment
