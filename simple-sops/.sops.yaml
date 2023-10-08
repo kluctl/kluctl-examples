@@ -1,0 +1,4 @@
+creation_rules:
+  - encrypted_regex: '^((?i)(secret($|[^N])|values|data|stringData|username|auth|.*(credentials|token|key|private|pass|secret|domain|ssid|webhook).*))$'
+    #path_regex: .*.(json|yml|yaml|sops|key)
+    age: 'age17putd49qeggegt8nlwvtruq8fut5lsny3894e0vta9mpn6udvpvs8809zy' # `,` separated list of keys public keys

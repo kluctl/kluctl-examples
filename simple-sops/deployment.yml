@@ -1,0 +1,9 @@
+deployments:
+  - include: deployment
+
+commonLabels:
+  examples.kluctl.io/environment: "{{ args.environment }}"
+  examples.kluctl.io/deployment-project: k8s-deployment-simple
+
+vars:
+  - file: secrets.yml
