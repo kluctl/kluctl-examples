@@ -3,4 +3,4 @@ helmChart:
   chartName: nginx
   chartVersion: 13.2.0
   releaseName: nginx
-  output: deploy.yml
+  namespace: simple-helm-{{ args.environment }}

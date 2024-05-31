@@ -1,4 +1,4 @@
 deployments:
   - path: nginx
 
-overrideNamespace: "{{ args.environment }}"
+overrideNamespace: "simple-helm-{{ args.environment }}"
