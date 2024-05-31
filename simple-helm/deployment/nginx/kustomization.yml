@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - namespace.yml
-  - helm-rendered.yml # this file is auto-generated at deploy time
+  - helm-rendered.yaml # this file is auto-generated at deploy time
