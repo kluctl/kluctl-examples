@@ -1,0 +1,6 @@
+# clusters/deployment.yaml
+deployments:
+  # Include things that are required on all clusters (e.g., the KluctlDeployment for the GitOps deployment itself)
+  - path: all
+  # We use simple templating to change a dedicated deployment item per cluster
+  - path: {{ args.cluster_name }}

@@ -1,0 +1,21 @@
+# clusters/test.example.com/app1.yaml
+apiVersion: gitops.kluctl.io/v1beta1
+kind: KluctlDeployment
+metadata:
+  name: app1
+  namespace: kluctl-gitops
+spec:
+  interval: 5m
+  source:
+    git:
+      url: https://github.com/kluctl/kluctl-examples.git
+      path: simple
+  target: simple
+  args:
+    environment: prod
+  context: default
+  # Let it automatically clean up orphan resources and delete all resources when the KluctlDeployment itself gets
+  # deleted. You might consider setting these to false for prod and instead do manual pruning and deletion when the
+  # need arises.
+  prune: true
+  delete: true
