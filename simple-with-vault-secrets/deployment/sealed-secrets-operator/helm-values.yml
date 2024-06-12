@@ -1,0 +1,22 @@
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 65534
+  runAsGroup: 65534
+  fsGroup: 65534
+  seccompProfile:
+    type: RuntimeDefault
+
+containerSecurityContext:
+  readOnlyRootFilesystem: true
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop:
+      - all
+
+resources:
+  limits:
+    cpu: 1
+    memory: 256Mi
+  requests:
+    cpu: 1
+    memory: 256Mi

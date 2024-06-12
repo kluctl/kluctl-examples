@@ -1,0 +1,19 @@
+targets:
+  - name: simple
+    context: kind-kind
+    args:
+      environment: simple
+    sealingConfig:
+      secretSets:
+        - simple
+
+secretsConfig:
+  sealedSecrets:
+    namespace: simple
+    controllerName: sealed-secrets-controller
+  secretSets:
+    - name: simple
+      vars:
+        - vault:
+            address: http://localhost:8200
+            path: secret/data/simple
