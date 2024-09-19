@@ -1,0 +1,4 @@
+whatever:
+    data:
+        some: config
+        for: nginx or it's app

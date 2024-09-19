@@ -1,0 +1,24 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- namespace.yml
+- secret.yml # deploy Secret kind, name: 'certificates'
+- deploy.yml
+
+secretGenerator:
+- name: credentials
+  literals:
+  - PASSWORD={{ secrets.nginx.credentials.password }}
+
+- name: server-config
+  files:
+  - ./config/server-config.yml
+- name: certificates-from-files
+  files:
+  - server.crt=./config/server.crt
+  - server.key=./config/server.key
+
+
+generatorOptions:
+  disableNameSuffixHash: true
